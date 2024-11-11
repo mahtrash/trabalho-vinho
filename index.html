@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vinhos pra adoçar</title>
+</head>
+<body style="background-color: blueviolet";>
+    <h1>Vinho pra adoçar</h1>
+    
+    
+    <div class="formulario">
+        <p>Por favor, digite sua idade:</p>
+        <input type="number" name="" id="idadeinput">
+        <button onclick="verificaridade()">Verificar</button>
+    </div>
+
+    <script>
+        function verificaridade(){
+            const idade = parseInt(document.getElementById("idadeinput").value);
+
+            if (idade >= 18) {
+
+                window.location.href = "meusite.html";
+            } else {
+                window.location.href ="menor.html"
+
+
+            }
+        }
+
+        
+    </script>
+    
+</body>
+</html>
